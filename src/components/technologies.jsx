@@ -11,7 +11,7 @@ const Technologies = () => {
           </p>
         </div>
 
-        <div className="mx-56 mt-6 space-y-10">
+        <div className="mx-56 mt-6 space-y-14">
           <Marquee direction="right" speed={40}>
             {technologies.map((single, index) => (
               <div key={index} className=" bg-[#1985bb34]/40 backdrop-blur-sm p-4 mr-6 h-24 w-full my-auto">
