@@ -18,7 +18,7 @@ const Header = () => {
         <section>
           <ul className="flex-center space-x-10 text-xl font-semibold">
             <li className="hover:text-[#1984bb] hover:font-semibold active:text-[#1984bb]">
-              <Link href="google.com">Services</Link>
+              <Link href="/services">Services</Link>
             </li>
             <li className="hover:text-[#1984bb] hover:font-semibold">
               <Link href="/blog">Blog</Link>
@@ -30,7 +30,7 @@ const Header = () => {
               <Link href="/contact">Contact</Link>
             </li>
             <li >
-              <Link href="/schedule"><button className="px-4 py-2 rounded-md cursor-pointer bg-[#1984bb] hover:shadow-none transition-all">Schedule A Call</button></Link>
+              <Link href="/schedule"><button className=" transtarent-bg px-4 py-2 rounded-md cursor-pointer transition-all hover">Schedule A Call</button></Link>
             </li>
           </ul>
         </section>

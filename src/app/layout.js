@@ -1,13 +1,12 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-import { AntdRegistry } from '@ant-design/nextjs-registry';
 import { Titillium_Web } from 'next/font/google';
 
 const titillium_Web = Titillium_Web({
   weight: ['200', '400', '600', '700'],
   subsets: ['latin'],
 })
- 
+
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -29,11 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={titillium_Web.className}>
       <body>
-         <AntdRegistry>
+
         <Header />
         {children}
         <Footer />
-        </AntdRegistry>
+
       </body>
     </html>
   );

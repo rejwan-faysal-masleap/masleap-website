@@ -1,0 +1,38 @@
+[
+  {
+    "img": "/images/php.webp",
+    "alt": "Tech1"
+  },
+  {
+    "img": "/images/python.webp",
+    "alt": "Tech2"
+  },
+  {
+    "img": "/images/java.webp",
+    "alt": "Tech3"
+  },
+  {
+    "img": "/images/vue.webp",
+    "alt": "Tech4"
+  },
+  {
+    "img": "/images/go.webp",
+    "alt": "Tech5"
+  },
+  {
+    "img": "/images/laravel.webp",
+    "alt": "Tech6"
+  },
+  {
+    "img": "/images/dotnet.webp",
+    "alt": "Tech7"
+  },
+  {
+    "img": "/images/azure.webp",
+    "alt": "Tech8"
+  },
+  {
+    "img": "/images/aws.webp",
+    "alt": "Tech9"
+  }
+]
