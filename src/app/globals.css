@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+body {
+  color: #000;
+}
+
+.button {
+  @apply px-4 py-2 rounded-md cursor-pointer bg-[#1984bb] hover:shadow-none transition-all;
+}
+
+.flex-center {
+  @apply flex items-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.base-color-text {
+  @apply text-[#1984bb];
+}
+
+.base-color-bg {
+  @apply bg-[#1984bb];
+}
+
+.head-title {
+  @apply text-7xl;
+}
+.medium-title {
+  @apply text-2xl font-semibold;
+}
+.small-paragaraph {
+  @apply text-xl tracking-wide;
+}
