@@ -1,38 +1,74 @@
 [
   {
-    "img": "/images/php.webp",
+    "img": "/images/php.png",
     "alt": "Tech1"
   },
   {
-    "img": "/images/python.webp",
+    "img": "/images/python.png",
     "alt": "Tech2"
   },
   {
-    "img": "/images/java.webp",
+    "img": "/images/java.png",
     "alt": "Tech3"
   },
   {
-    "img": "/images/vue.webp",
+    "img": "/images/vue.png",
     "alt": "Tech4"
   },
   {
-    "img": "/images/go.webp",
+    "img": "/images/go.png",
     "alt": "Tech5"
   },
   {
-    "img": "/images/laravel.webp",
+    "img": "/images/laravel.png",
     "alt": "Tech6"
   },
   {
-    "img": "/images/dotnet.webp",
+    "img": "/images/dotnet.png",
     "alt": "Tech7"
   },
   {
-    "img": "/images/azure.webp",
+    "img": "/images/c++.png",
     "alt": "Tech8"
   },
   {
-    "img": "/images/aws.webp",
+    "img": "/images/aws.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/express.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/go.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/js.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/node.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/react.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/ts.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/c.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/tw.png",
+    "alt": "Tech9"
+  },
+  {
+    "img": "/images/c++.png",
     "alt": "Tech9"
   }
 ]

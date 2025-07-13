@@ -9,18 +9,18 @@
     "img": "/animated-logoes/mobile-apps.gif",
     "alt": "Service2",
     "title": "Mobile Application Development",
-    "description": "Our availability ensures customer convenience. We build mobile apps from scratch—backed by research-driven UI design—and launch on Android and iOS to meet market standards. Our solutions use popular tech stacks for smooth maintenance and long-term reliability."
+    "description": "Our availability ensures customer convenience. We build mobile apps from scratch backed by research driven UI design and launch on Android and iOS to meet market standards."
   },
   {
     "img": "/animated-logoes/software.gif",
     "alt": "Service3",
     "title": "Custom Software Development",
-    "description": "Our developers specialize in on-demand frameworks and languages to build cost-effective, high-performance web applications. Unlike off-the-shelf solutions, custom software is tailored to your operations—boosting productivity and driving sustainable growth across areas like inventory and logistics."
+    "description": "Our developers specialize in on-demand frameworks and languages to build cost-effective, high-performance web applications. Our custom software is tailored to your operations boosting productivity and driving sustainable growth across areas like inventory and logistics."
   },
   {
     "img": "/animated-logoes/uiux.gif",
     "alt": "Service4",
     "title": "Ui/Ux Design",
-    "description": "Masleap specializes in researching diverse themes and patterns to deliver top-tier UI/UX. We tailor interfaces aligned with your business needs, ensuring seamless experiences across web and mobile platforms—designed to evolve with industry standards."
+    "description": "Masleap specializes in researching diverse themes and patterns to deliver top-tier UI/UX. We tailor interfaces aligned with your business needs, ensuring seamless experiences across web."
   }
 ]

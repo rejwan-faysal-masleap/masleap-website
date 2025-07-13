@@ -1,5 +1,4 @@
 import Footer from "@/components/shared/footer";
-import Header from "@/components/shared/header";
 import { Titillium_Web } from 'next/font/google';
 
 const titillium_Web = Titillium_Web({
@@ -7,6 +6,7 @@ const titillium_Web = Titillium_Web({
   subsets: ['latin'],
 })
 
+import { NavbarDemo } from "@/components/shared/navbar";
 import "./globals.css";
 
 // const geistSans = Geist({
@@ -29,8 +29,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={titillium_Web.className}>
       <body>
 
-        <Header />
-        {children}
+        {/* <Header /> */}
+        <NavbarDemo />
+          {children}      
         <Footer />
 
       </body>

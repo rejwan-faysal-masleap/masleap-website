@@ -1,9 +1,9 @@
 const Whyus = () => {
   return (
     <>
-      <div className="min-h-[90vh] text-xl flex-center-center max-w-7xl mx-auto">
-        <section className="flex-1/2 flex-center flex-col space-y-10 pb-28">
-          <p className="head-title">
+      <div className="min-h-full md:min-h-[90vh] text-xl flex-between flex-col max-w-[1600px] mx-auto py-40 md:py-0 text-center md:text-left p-4">
+        <section className="md:flex-1/2 flex-center flex-col space-y-10 pb-10 md:pb-28">
+          <p className="head-title text-3xl font-[550px]">
             Why choose Masleap for project management and defining the scope of
             work?
           </p>
@@ -14,8 +14,8 @@ const Whyus = () => {
           </p>
         </section>
         {/* Pic Attached Here */}
-        <section className="flex-1/2 pb-24 justify-self-end">
-          <div className="w-full h-screen flex items-center justify-center">
+        <section className="flex-1/2 pb-24 hidden md:block">
+          <div className="w-full h-screen flex items-center justify-end pr-40">
             <div className=" h-[450px] w-[350px] relative overflow-visible">
               <div className=" h-96 w-72 ">
                 <img className="img rounded-tl-3xl" src="/peoples img/dev1.webp" alt="dev1" />

@@ -3,17 +3,17 @@ import SingleCard from "../../../utils/singleCard";
 const OurSolutions = () => {
   return (
     <>
-      <div className="min-h-[90vh] mb-20 bg-gradient-to-b from-[#1985bb34] to-[#ffff] pt-20 pb-28">
-        <div className="text-center">
-          <p className="head-title py-10">Our Solutions</p>
-          <p className="text-2xl pb-20">
+      <div className="min-h-full md:min-h-[90vh] mb-20 bg-gradient-to-b from-[#1985bb34] to-[#ffff] pt-20 pb-28 p-4">
+        <div className="flex-center flex-col space-y-8 pb-10 md:pb-28 text-center">
+          <p className="head-title text-3xl font-[550px]">Our Solutions</p>
+          <p className="text-xl md:text-2xl pb-20">
             We provide a time-worthy business solution to every type of
             business. Find out your one and level up your success stairs.
           </p>
         </div>
 
-        <div className="mx-56 mt-6">
-          <div className="grid grid-cols-3 gap-6 gap-y-10">
+        <div className="md:mx-56 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Cards */}
             {services.map((single, index) => 
               <SingleCard single={single} key={index}/>

@@ -7,15 +7,15 @@ import { IoMailOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <div className="min-h-60  flex-center max-w-[1400px] mx-auto text-xl my-20">
-        <div className="flex-[40%] ">
+      <div className="min-h-60 flex-center flex-col md:flex-row max-w-[1400px] mx-auto text-xl md:my-20 my-0">
+        <div className="flex-[40%]">
           <section className="mb-6">
             <Link href="/" className="flex-center space-x-4">
               <Image
-                src="/masleaplogo.png"
+                src="/images/logo.png"
                 alt="masleap-logo"
-                width="70"
-                height="70"
+                width={70}
+                height={70}
               />
               <p className=" font-medium text-3xl">Masleap</p>
             </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
             
           </section>
         </div>
-        <div className="flex-[50%]  flex-center justify-end gap-x-24 pr-20 border-l-4 border-l-gray-950">
+        <div className="flex-[50%] flex flex-col md:flex-row items-start md:items-center justify-start md:justify-end  md:gap-x-24 md:pr-20 border-l-4 border-l-gray-950">
        
         <div alt="div1">
           <p className=" text-gray-900 pb-1.5 mb-5 border-b-4 border-b-[#1984bb] font-semibold">Company</p>
