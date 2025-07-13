@@ -1,8 +1,10 @@
-import Companies from "@/components/companies";
-import OurSolutions from "@/components/ourSolutions";
-import Technologies from "@/components/technologies";
-import Whyus from "@/components/whyus";
-import Hero from "../components/hero";
+import Companies from "@/components/home/companies";
+import OurSolutions from "@/components/home/ourSolutions";
+import Projects from "@/components/home/projects";
+import Technologies from "@/components/home/technologies";
+import Testimonials from "@/components/home/testimonials";
+import Whyus from "@/components/home/whyus";
+import Hero from "../components/home/hero";
 export default function Home() {
   return (
     <>
@@ -14,6 +16,11 @@ export default function Home() {
           <Whyus />
           <OurSolutions />
           <Technologies />
+          <Projects />
+          <div className="max-w-[1600px] mx-auto text-xl">
+           <Testimonials />
+        </div>
+         
       </div>
     </>
   );

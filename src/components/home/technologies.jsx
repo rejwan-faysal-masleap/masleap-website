@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import technologies from "../../utils/technologies.json";
+import technologies from "../../../utils/technologies.json";
 const Technologies = () => {
   return (
     <>

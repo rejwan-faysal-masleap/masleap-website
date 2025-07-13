@@ -1,5 +1,5 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Footer from "@/components/shared/footer";
+import Header from "@/components/shared/header";
 import { Titillium_Web } from 'next/font/google';
 
 const titillium_Web = Titillium_Web({

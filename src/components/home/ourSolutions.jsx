@@ -1,5 +1,5 @@
-import services from "../../utils/services.json";
-import SingleCard from "../../utils/singleCard";
+import services from "../../../utils/services.json";
+import SingleCard from "../../../utils/singleCard";
 const OurSolutions = () => {
   return (
     <>

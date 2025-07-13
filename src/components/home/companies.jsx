@@ -1,4 +1,4 @@
-import companies from "../../utils/companies.json";
+import companies from "../../../utils/companies.json";
 const Companies = () => {
   return (
     <>
