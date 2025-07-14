@@ -3,10 +3,10 @@ import technologies from "../../../utils/technologies.json";
 const Technologies = () => {
   return (
     <>
-      <div className="min-h-[90vh] mb-20 pt-20 md:pb-28">
-        <div className="flex-center flex-col space-y-8 pb-10 md:pb-28 text-center">
+      <div className="md:min-h-[90vh] pt-20 pb-12 md:pb-2">
+        <div className="flex-center flex-col space-y-8 pb-10 md:pb-18 text-center">
           <p className="head-title text-3xl font-[550px]">Technology We Use</p>
-          <p className="text-xl md:text-2xl pb-20">
+          <p className="text-xl md:text-2xl pb-8 md:pb-20">
             We understand that today companies must develop custom software products to keep pace with the competitive market.
           </p>
         </div>

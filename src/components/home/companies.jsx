@@ -1,8 +1,10 @@
 import companies from "../../../utils/companies.json";
+import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 const Companies = () => {
   return (
     <>
-      <div className="min-h-[30vh] text-center px-4 pt-5 pb-8">
+    <BackgroundBeamsWithCollision>
+      <div className="min-h-[30vh] text-center px-4 pt-5 md:mb-28 mb-28">
         <p className="small-paragaraph font-semibold text-center mb-20">
           50+ companies rely on our top 1% talent to scale their dev teams.
         </p>
@@ -18,6 +20,7 @@ const Companies = () => {
           ))}
         </div>
       </div>
+      </BackgroundBeamsWithCollision>
     </>
   );
 };

@@ -37,7 +37,7 @@ body {
 }
 
 .medium-title {
-  @apply text-2xl font-semibold;
+  @apply md:text-2xl sm:text-[21px] font-semibold;
 }
 .small-paragaraph {
   @apply text-xl tracking-wide;
