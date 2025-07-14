@@ -1,0 +1,26 @@
+[
+  {
+    "img": "/vectoricons/1.png",
+    "title": "Analytical Thinking",
+    "description": "At Masleap, we believe in a bottom-up approach. We experiment, observe, learn, and refine our strategies before execution. It’s how we build smarter, more effective solutions—by letting data and insights lead the way.",
+    "alt": "Tech1"
+  },
+  {
+    "img": "/vectoricons/2.png",
+    "title": "Courage to Explore",
+    "description": "We see mistakes as a sign of effort. Our team embraces curiosity and the willingness to take risks, knowing that each misstep is a valuable part of the learning process.",
+    "alt": "Tech2"
+  },
+  {
+    "img": "/vectoricons/3.png",
+    "title": "Equity at the Core",
+    "description": "Respect and equal opportunity are non-negotiable. Regardless of role, race, gender, or belief, everyone at Masleap deserves to be heard, valued, and empowered.",
+    "alt": "Tech3"
+  },
+  {
+    "img": "/vectoricons/4.png",
+    "title": "A Culture of Fun",
+    "description": "We take joy seriously. Regular social events, team-building activities, and spontaneous moments of fun help us stay connected, energized, and inspired.",
+    "alt": "Tech4"
+  }
+]

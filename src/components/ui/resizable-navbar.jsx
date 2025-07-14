@@ -67,7 +67,7 @@ export const NavBody = ({
         minWidth: "800px",
       }}
       className={cn(
-        "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
+        "relative z-[60] mx-auto hidden w-full max-w-[1600px] flex-row items-center justify-between self-start rounded-full bg-transparent px-4 py-2 lg:flex dark:bg-transparent",
         visible && "bg-white/80 dark:bg-neutral-950/80",
         className
       )}>
@@ -199,7 +199,7 @@ export const NavbarLogo = () => {
         alt="logo"
         width={50}
         height={50} />
-      <span className="medium-title text-black dark:text-white">Masleap</span>
+      <span className="medium-title text-xl text-black dark:text-white">Masleap</span>
     </a>
   );
 };

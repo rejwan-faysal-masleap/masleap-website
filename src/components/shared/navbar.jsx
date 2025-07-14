@@ -22,8 +22,8 @@ export function NavbarDemo() {
       link: "/blogs",
     },
     {
-      name: "About",
-      link: "/about",
+      name: "Career",
+      link: "/career",
     },
     {
       name: "Contact",

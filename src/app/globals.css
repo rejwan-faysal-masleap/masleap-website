@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme inline {
+  --shadow-input: 0px 2px 3px -1px rgba(0, 0, 0, 0.1),
+    0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
+}
+
 /* @import "tw-css-animate"; */
 
 @custom-variant dark (&:is(.dark *));
@@ -21,7 +27,7 @@ body {
 }
 
 .flex-between {
-  @apply flex items-center justify-between lg:flex-row;
+  @apply flex items-center justify-between;
 }
 
 .base-color-text {
@@ -40,7 +46,7 @@ body {
   @apply md:text-2xl sm:text-[21px] font-semibold;
 }
 .small-paragaraph {
-  @apply text-xl tracking-wide;
+  @apply text-[18px] md:text-[20px] tracking-wide;
 }
 
 .img {
