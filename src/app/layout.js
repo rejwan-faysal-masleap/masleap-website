@@ -8,6 +8,7 @@ const titillium_Web = Titillium_Web({
 
 import { NavbarDemo } from "@/components/shared/navbar";
 import "./globals.css";
+import { DotBackgroundDemo } from "@/components/ui/dotbg";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -31,9 +32,11 @@ export default function RootLayout({ children }) {
 
         {/* <Header /> */}
         <NavbarDemo />
-          {children}      
-        <Footer />
+        <DotBackgroundDemo>
 
+          {children}
+        </DotBackgroundDemo>
+        <Footer />
       </body>
     </html>
   );

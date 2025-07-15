@@ -1,7 +1,7 @@
 const Whyus = () => {
   return (
     <>
-      <div className="md:min-h-[50vh] text-xl flex-between md:flex-row flex-col max-w-[1600px] mx-auto py-20 pt-24 md:py-0 md:pt-0 text-center md:text-left p-4">
+      <div className="md:min-h-[50vh] text-xl flex-between md:flex-row flex-col max-w-[1600px] mx-auto py-20 pt-24 md:py-0 md:pt-0 text-center md:text-left p-6">
         <section className="md:flex-1/2 flex-center flex-col space-y-10">
           <p className="head-title text-3xl font-[550px]">
             Why choose Masleap for project management and defining the scope of

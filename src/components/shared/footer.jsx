@@ -7,8 +7,8 @@ import { IoMailOutline } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-    <div className="my-8 h-[2px] w-full bg-gradient-to-r from-transparent via-[#1984bb] to-transparent dark:via-neutral-700" />
-      <div className="min-h-60 flex-center flex-col md:flex-row max-w-[1400px] mx-auto text-xl md:my-20 my-0 gap-y-10 p-4">
+    {/* <div className="my-8 h-[2px] w-full bg-gradient-to-r from-transparent via-[#1984bb] to-transparent dark:via-neutral-700" /> */}
+      <div className="min-h-60 flex-center flex-col md:flex-row max-w-[1400px] mx-auto text-xl md:my-20 my-0 gap-y-10 p-6">
         <div className="flex-[40%]">
           <section className="mb-6">
             <Link href="/" className="flex-center space-x-3">

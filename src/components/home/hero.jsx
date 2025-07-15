@@ -9,7 +9,7 @@ const Hero = () => {
 >
   <div className="absolute inset-0 bg-gradient-to-b from-[#1985bbcc] to-[#ffffffcc]"></div>
 
-  <section className="relative z-10 flex flex-col items-center space-y-10 pb-28">
+  <section className="relative z-10 flex flex-col items-center space-y-10 pb-28 max-w-[1700px]">
     <p className="px-5 py-2 rounded-full bg-white/20 text-sm md:text-xl backdrop-blur-md">
       Leading Software Development Company In Bangladesh
     </p>
@@ -21,9 +21,7 @@ const Hero = () => {
       development partner for creativity and technical excellence.
     </p>
   </section>
-</div>
-
-    
+</div>    
     </>
   )
 }

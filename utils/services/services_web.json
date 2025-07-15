@@ -1,0 +1,26 @@
+[
+  {
+    "id": "web-app1",
+    "project_name": "NUBIZ SOLUTION",
+    "description": "A website agency based in Frederick, Maryland has been serving clients for more than a decade and now wants to grow further with more enhanced features. Masleap became a technology partner by not only developing professional layouts but also delivering productive features to their client base for robust websites with dynamic and API integrated features.",
+    "tech": "Vue JS, Laravel",
+    "live_link": "https://www.nubizsolution.com/",
+    "img": "/stockimages/web1.png"
+  },
+  {
+    "id": "web-app2",
+    "project_name": "SALADS 2 YOUR DOOR",
+    "description": "An innovative business to deliver your nutritions to your house. Masleap simplified the process by solutions for internal subscription for each user under one booking portal. It enables the user to check on the subscription models with regional sales tax on their orders and gives the feasibility of accounting for the client with the integration of QuickBooks application.",
+    "tech": "React JS, Django",
+    "live_link": "https://www.salads2yourdoor.com/",
+    "img": "/stockimages/web2.png"
+  },
+  {
+    "id": "web-app3",
+    "project_name": "HEADPOINTE",
+    "description": "We have created a business from the very niche of mountain trekking where people can purchase various tools from renowned vendors all over the world. Primarily, the connectivity between suppliers and distributors remained to be the main challenge. The optimum operation on a daily basis consists of secure payment gateway, product categorization, and generating POs for each department and this is where Masleap delivered viable solutions and deployment.",
+    "tech": "React JS, MongoDB, Node JS",
+    "live_link": "https://www.headpointe.com/",
+    "img": "/stockimages/web3.png"
+  }
+]

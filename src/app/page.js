@@ -5,15 +5,13 @@ import Projects from "@/components/home/projects";
 import Technologies from "@/components/home/technologies";
 import Testimonials from "@/components/home/testimonials";
 import Whyus from "@/components/home/whyus";
-import { DotBackgroundDemo } from "@/components/ui/dotbg";
-import { GoogleGeminiEffectDemo } from "../../utils/googleGeminiEffect";
 import Hero from "../components/home/hero";
 export default function Home() {
   return (
     <>
    
       <div className="text-xl">
-         <DotBackgroundDemo>
+         
           <Hero />
         <Whyus />
         <div className="max-w-[1400px] mx-auto text-xl">
@@ -26,8 +24,6 @@ export default function Home() {
           <Testimonials />
           <Blogs />
         </div>
-          </DotBackgroundDemo>
-        <GoogleGeminiEffectDemo />
       </div>
       
     </>

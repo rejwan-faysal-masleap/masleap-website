@@ -1,4 +1,5 @@
-"use client";;
+"use client";
+
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { AnimatePresence, motion } from "motion/react";
 
@@ -29,9 +30,15 @@ export const AnimatedTestimonials = ({
     }
   }, [autoplay]);
 
-  const randomRotateY = () => {
-    return Math.floor(Math.random() * 21) - 10;
-  };
+  // const randomRotateY = () => {
+  //   return Math.floor(Math.random() * 21) - 10;
+  // };
+
+  const [rotations, setRotations] = useState([]);
+
+useEffect(() => {
+  setRotations(testimonials.map(() => Math.floor(Math.random() * 21) - 10));
+}, [testimonials]);
   return (
     <div
       className="max-w-sm antialiased md:min-w-4xl md:pl-16">
@@ -46,13 +53,13 @@ export const AnimatedTestimonials = ({
                     opacity: 0,
                     scale: 0.9,
                     z: -100,
-                    rotate: randomRotateY(),
+                    rotate: isActive(index) ? 0 : rotations[index] || 0
                   }}
                   animate={{
                     opacity: isActive(index) ? 1 : 0.7,
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
-                    rotate: isActive(index) ? 0 : randomRotateY(),
+                    rotate: isActive(index) ? 0 : isActive(index) ? 0 : rotations[index] || 0,
                     zIndex: isActive(index)
                       ? 40
                       : testimonials.length + 2 - index,
@@ -62,7 +69,7 @@ export const AnimatedTestimonials = ({
                     opacity: 0,
                     scale: 0.9,
                     z: 100,
-                    rotate: randomRotateY(),
+                    rotate: isActive(index) ? 0 : rotations[index] || 0,
                   }}
                   transition={{
                     duration: 0.4,

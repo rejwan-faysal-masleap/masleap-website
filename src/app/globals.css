@@ -5,7 +5,15 @@
     0px 1px 0px 0px rgba(25, 28, 33, 0.02),
     0px 0px 0px 1px rgba(25, 28, 33, 0.08);
 }
+.no-visible-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
+}
 
+.no-visible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 /* @import "tw-css-animate"; */
 
 @custom-variant dark (&:is(.dark *));
@@ -55,6 +63,16 @@ body {
 
 .transtarent-bg {
   @apply bg-transparent shadow-lg ring-1 ring-black/5;
+}
+
+.gradient-right-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #1984bb, transparent);
 }
 
 @theme inline {

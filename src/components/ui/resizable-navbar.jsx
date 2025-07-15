@@ -112,7 +112,7 @@ export const NavItems = ({
 export const MobileNav = ({
   children,
   className,
-  visible
+  visible = true
 }) => {
   return (
     <motion.div

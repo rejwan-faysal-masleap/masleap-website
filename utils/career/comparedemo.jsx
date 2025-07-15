@@ -9,7 +9,7 @@ export function CompareDemo() {
         secondImage="https://assets.aceternity.com/code-solution.png"
         firstImageClassName="object-cover object-left-top"
         secondImageClassname="object-cover object-left-top"
-        className="h-[250px] w-[200px] md:h-[500px] md:w-[500px]"
+        className="h-[250px] w-[350px] mx-auto md:h-[500px] md:w-[600px]"
         slideMode="hover" />
     </div>
   );
