@@ -4,10 +4,10 @@ const SingleCard = ({ index, single }) => {
       data-aos="fade-left"
       data-aos-duration={`${(index + 4) * 100}`}
       key={index}
-      className="flex flex-col md:flex-row rounded-3xl bg-white/40 backdrop-blur-sm p-2 max-h-full"
+      className="flex flex-col rounded-3xl bg-white/40 backdrop-blur-sm p-2 max-h-full border"
     >
       <div className="flex-[25%]">
-        <div className="md:w-full w-1/3 p-6 md:pr-0 pb-0">
+        <div className="md:w-[200px] w-1/3 p-6 pb-0">
           <img className="img rounded-3xl" src={single.img} alt="s1" />
         </div>
       </div>

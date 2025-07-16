@@ -1,30 +1,43 @@
 import { ContainerTextFlipDemo } from "../../../utils/HeroText";
+import InteractiveGlobe from "../3dglobe/InteractiveGlobe";
 
 const Hero = () => {
   return (
-    <>
-   <div
-  className="relative min-h-2/3 pt-24 md:pt-0 md:min-h-screen bg-cover bg-center bg-no-repeat text-center px-4 flex-center justify-center mb-10 md:mb-0"
-  style={{ backgroundImage: `url('/images/bg-hero.png')` }}
->
-  <div className="absolute inset-0 bg-gradient-to-b from-[#00aaff36] to-[#ffffff]"></div>
+    <div className="relative min-h-[70vh] flex-between px-6 mb-10 md:mb-0 max-w-[1600px] mx-auto">
+      {/* Text section */}
+      <section
+        className="flex flex-col z-10 space-y-7 flex-1/2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <p className="px-7 py-2 rounded-full bg-[#00aaff1a] text-sm md:text-[21px] backdrop-blur-md font-[600] w-fit shadow-md">
+  Leading Software Development Company In Bangladesh
+</p>
 
-  <section className="relative z-10 flex flex-col items-center space-y-10 pb-28 max-w-[1700px] md:mb-20" data-aos="fade-up" data-aos-duration="1000">
-    <p className="px-8 py-2 rounded-full bg-white/20 text-sm md:text-[21px] backdrop-blur-md font-[500]">
-      Leading Software Development Company In Bangladesh
-    </p>
-    <div className="head-title text-3xl font-[550px]">
-      We Deploy <ContainerTextFlipDemo /> Agile Product Teams on Demand
+
+        <div className="head-title text-3xl md:text-5xl font-semibold pb-5">
+          We Deploy <ContainerTextFlipDemo /> Agile Product Teams on Demand
+        </div>
+        <p className=" text-gray-700 md:pr-4 font-[500]">
+          Delivering innovative software solutions, Masleap is your trusted
+          offshore development partner for creativity and technical excellence.
+        </p>
+      </section>
+
+      {/* Image section */}
+      <div className="hidden md:block relative w-1/2 h-[70vh] flex-1/2">
+        {/* <img
+          src="/images/bg-hero.png"
+          alt="Hero Image"
+          className="absolute top-0 right-0 h-full w-full object-cover"
+        /> */}
+        {/* <div className="absolute inset-0 bg-gradient-to-l from-[#00aaff36] to-transparent"></div> */}
+
+
+        <InteractiveGlobe />
+      </div>
     </div>
-    <p className="small-paragaraph">
-      Delivering innovative software solutions, Masleap is your trusted offshore
-      development partner for creativity and technical excellence.
-    </p>
-  </section>
-</div>    
-    </>
-  )
-}
+  );
+};
 
 export default Hero;
-

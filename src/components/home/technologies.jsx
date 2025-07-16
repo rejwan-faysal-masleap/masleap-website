@@ -3,10 +3,10 @@ import technologies from "../../../utils/technologies.json";
 const Technologies = () => {
   return (
     <>
-      <div className="md:min-h-[90vh] pt-20 pb-12 md:pb-2">
-        <div className="flex-center flex-col space-y-8 pb-10 md:pb-18 text-center">
+      <div className="md:min-h-[60vh] pt-10 pb-12 mb-10 md:pb-2">
+        <div className="flex-center flex-col space-y-6 pb-10 text-center">
           <p className="head-title text-3xl font-[550px]">Technology We Use</p>
-          <p className="text-xl md:text-2xl pb-8 md:pb-20">
+          <p className="text-xl md:small-paragaraph pb-8 md:pb-20">
             We understand that today companies must develop custom software products to keep pace with the competitive market.
           </p>
         </div>
@@ -15,14 +15,7 @@ const Technologies = () => {
           <Marquee direction="right" speed={40}>
             {technologies.map((single, index) => (
               <div key={index} className="p-4 mr-6 h-full w-full my-auto">
-                <img className="object-contain h-[100px] w-[100px]" src={single.img} alt={single.alt}/>
-              </div>
-            ))}
-          </Marquee>
-          <Marquee direction="left" speed={60}>
-            {technologies.map((single, index) => (
-              <div key={index} className="p-4 mr-6 h-full w-full my-auto">
-                <img className="object-contain h-[100px] w-[100px]" src={single.img} alt={single.alt}/>
+                <img className="object-contain h-[150px] w-[150px]" src={single.img} alt={single.alt}/>
               </div>
             ))}
           </Marquee>

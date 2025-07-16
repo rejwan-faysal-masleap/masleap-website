@@ -29,7 +29,7 @@ const [news, setNews] = useState([]);
   if (loading) return <LoadingSpinner />;
   return (
     <>
-    <div className="min-h-[90vh] mb-0 md:mb-24 pt-20 pb-28 p-6 max-w-[1400px] mx-auto">
+    <div className="min-h-[90vh] mb-0 md:mb-10 pt-20 pb-28 p-6 max-w-[1400px] mx-auto">
             <div className="flex-center flex-col pb-10 md:pb-18 text-center">
               <p className="head-title text-3xl font-[550px]">Our Recent Blogs</p>
             </div>

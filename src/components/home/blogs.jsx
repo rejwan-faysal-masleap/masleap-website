@@ -35,10 +35,10 @@ const Blogs = () => {
   } 
   return (
     <>
-      <div className="min-h-[90vh] mb-0 md:mb-24 pt-20 pb-28 p-6">
-        <div className="flex-center flex-col space-y-8 pb-10 md:pb-18 text-center">
+      <div className="min-h-[90vh] mb-0 md:mb-10 pt-20 pb-28 p-6">
+        <div className="flex-center flex-col space-y-6 pb-10 md:pb-18 text-center">
           <p className="head-title text-3xl font-[550px]">Our Recent Blogs</p>
-          <p className="text-xl md:text-2xl">
+          <p className="text-xl md:small-paragaraph">
             Insights, trends, and expert tips from our development team.
           </p>
         </div>
