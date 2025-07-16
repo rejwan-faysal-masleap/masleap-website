@@ -16,7 +16,7 @@ const OurSolutions = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Cards */}
             {services.map((single, index) => 
-              <SingleCard single={single} key={index}/>
+              <SingleCard single={single} key={index} index={index}/>
             )}
           </div>
         </div>

@@ -21,8 +21,8 @@ const Footer = () => {
               <p className="font-semibold text-2xl md:text-3xl">Masleap</p>
             </Link>
           </section>
-          <section className="uppercase space-y-1 md:text-xl text-[17px]">
-            <p>2/2 aysha mohol, shajahan road, Mohammadpur.</p>
+          <section data-aos="fade-up" data-aos-duration="500" className="uppercase space-y-1 md:text-xl text-[17px]">
+            <p >2/2 aysha mohol, shajahan road, Mohammadpur.</p>
             <p className="mt-2">Buckeystown Pike, Frederick, MD, USA Suite 250.</p>
             <div className="flex-center gap-x-2 mt-6">
                < IoMailOutline className="md:text-2xl"/>
@@ -39,8 +39,8 @@ const Footer = () => {
        
         <div alt="div1">
           <p className=" text-gray-900 pb-1.5 mb-5 border-b-4 border-b-[#1984bb] font-semibold">Company</p>
-          <ul className="space-y-2 md:space-y-3">
-            <li><a href="/Career">Career</a> Us</li>
+          <ul data-aos="fade-up" data-aos-duration="500" className="space-y-2 md:space-y-3">
+            <li><a href="/Career">Career</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/privacy">Privacy Policy</a></li>
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
          <div alt="div2">
           <p className=" text-gray-900 pb-1.5 mb-5 border-b-4 border-b-[#1984bb] font-semibold">Services</p>
-          <ul className="space-y-2 md:space-y-3">
+          <ul className="space-y-2 md:space-y-3" data-aos="fade-up" data-aos-duration="500">
             <li><a href="/web_app_dev">Web Application Development</a></li>
             <li><a href="/mobile_app_dev">Mobile App Development</a></li>
             <li><a href="/custom_soft_dev">Custom Software Development</a></li>

@@ -9,7 +9,7 @@ const Testimonials = () => {
             <p className="head-title text-3xl font-[550px]">Testimonials</p>
             <p className="text-xl md:text-2xl pb-16 md:pb-0">What Clients Say About Masleap.</p>
           </div>
-          <div className="flex-1/2">
+          <div className="flex-1/2" data-aos="fade-left" data-aos-duration="1000">
             <AnimatedTestimonialsDemo/>
           </div>
         </div>

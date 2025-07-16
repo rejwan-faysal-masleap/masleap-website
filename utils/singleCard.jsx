@@ -1,6 +1,8 @@
-const SingleCard = ({index, single}) => {
+const SingleCard = ({ index, single }) => {
   return (
     <div
+      data-aos="fade-left"
+      data-aos-duration={`${(index + 4) * 100}`}
       key={index}
       className="flex flex-col md:flex-row rounded-3xl bg-white/40 backdrop-blur-sm p-2 max-h-full"
     >
@@ -12,7 +14,9 @@ const SingleCard = ({index, single}) => {
       <div className="flex-[75%]">
         <div className="w-full p-6 pl-8">
           <p className="medium-title pb-2">{single.title}</p>
-          <p className="small-paragaraph whitespace-break-spaces">{single.description}</p>
+          <p className="small-paragaraph whitespace-break-spaces">
+            {single.description}
+          </p>
         </div>
       </div>
     </div>

@@ -3,8 +3,8 @@
 import { Tabs } from "@/components/ui/services/tabs";
 import { useRouter } from "next/navigation";
 
-import services_web from "./services_web.json";
 import services_mobile from "./services_mobile.json"; // (optional for more tabs)
+import services_web from "./services_web.json";
 
 export function TabsDemo() {
   const router = useRouter();
@@ -18,9 +18,9 @@ export function TabsDemo() {
         <div
           key={project.id}
           onClick={() => router.push(`/services/${project.id}`)}
-          className="cursor-pointer w-full overflow-hidden relative rounded-2xl text-base md:text-xl font-semibold text-white bg-gradient-to-br from-gray-800 to-black p-5 hover:scale-[1.01] transition-transform"
+          className="cursor-pointer w-full overflow-hidden relative rounded-2xl text-base md:text-xl font-semibold text-white bg-gradient-to-br from-gray-800 to-black md:p-5 p-2 hover:scale-[1.01] transition-transform"
         >
-          <p className="mb-4">{project.project_name}</p>
+          <p className="md:mb-4 mb-2">{project.project_name}</p>
           <img
             className="object-cover rounded-xl mx-auto"
             src={project.img}

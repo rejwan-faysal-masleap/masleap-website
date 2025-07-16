@@ -78,17 +78,14 @@ export const Carousel = ({
       <div className="relative w-full">
         <div
           className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-10"
-          ref={carouselRef}
+          ref={carouselRef} 
           onScroll={checkScrollability}>
           <div
             className={cn("absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l")}></div>
 
           <div
             className={cn(
-              "flex flex-row justify-start gap-4 pl-4",
-              // remove max-w-4xl if you want the carousel to span the full width of its container
-              "mx-auto max-w-7xl"
-            )}>
+              "flex flex-row justify-start gap-4 pl-4 mx-auto max-w-[110rem]")}>
             {items.map((item, index) => (
               <motion.div
                 initial={{

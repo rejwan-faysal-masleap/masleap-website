@@ -12,6 +12,7 @@ const Companies = () => {
           {companies.map((singleImg, index) => (
             <div className="w-2/3" key={index}>
               <img
+                data-aos="fade-up" data-aos-duration={`${(index + 3) * 100}`}
                 className="img"
                 src={singleImg.img}
                 alt={singleImg.alt}

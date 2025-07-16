@@ -10,6 +10,8 @@ import { NavbarDemo } from "@/components/shared/navbar";
 import { DotBackgroundDemo } from "@/components/ui/dotbg";
 import "./globals.css";
 
+import AOSWrapper from "@/components/aos/AOSWrapper";
+
 export const metadata = {
   title: "Masleap",
   description: "A leading Tech Company In Bangladesh",
@@ -20,11 +22,12 @@ export default function RootLayout({ children }) {
     <html lang="en" className={titillium_Web.className}>
       <body>
 
-        {/* <Header /> */}
+
         <NavbarDemo />
         <DotBackgroundDemo>
-
-          {children}
+          <AOSWrapper>
+            {children}
+          </AOSWrapper>
         </DotBackgroundDemo>
         <Footer />
       </body>

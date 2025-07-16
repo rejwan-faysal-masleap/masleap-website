@@ -2,12 +2,33 @@
 
 import { useRouter } from "next/navigation";
 import { ThreeDCardDemo } from "../../../utils/3dCard";
-import blogs from "../../../utils/blogs.json";
+// import blogs from "../../../utils/blogs.json";
+import { useEffect, useState } from 'react';
 
 const Blogs = () => {
 
-
   const router = useRouter(); 
+
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+   useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const res = await fetch('/api/news');
+        const data = await res.json();
+        setNews(data);
+      } catch (err) {
+        console.error("Failed to load tech news", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
+  if (loading) return <p>Loading...</p>;
 
   const handleBtnClick = ()=> {
     router.push("/blogs");
@@ -22,8 +43,8 @@ const Blogs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-12 min-h-[650px] md:mb-14 px-4">
-          {blogs.slice(0, 3).map((single, index) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-y-5 gap-x-12 min-h-[650px] md:mb-14 px-4" data-aos="fade-up" data-aos-duration="1000">
+          {news?.slice(0, 3)?.map((single, index) => (
             <ThreeDCardDemo single={single} key={index} />
           ))}
         </div>

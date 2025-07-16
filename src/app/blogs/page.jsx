@@ -1,6 +1,32 @@
+"use client"
+
+import { useEffect, useState } from 'react';
 import { ThreeDCardDemo } from "../../../utils/3dCard";
-import blogs from "../../../utils/blogs.json";
+import LoadingSpinner from '../../../utils/loadingSpinner/spinner';
+
+
 const page = () => {
+  
+const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+   useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        const res = await fetch('/api/news');
+        const data = await res.json();
+        setNews(data);
+      } catch (err) {
+        console.error("Failed to load tech news", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
+  if (loading) return <LoadingSpinner />;
   return (
     <>
     <div className="min-h-[90vh] mb-0 md:mb-24 pt-20 pb-28 p-6 max-w-[1400px] mx-auto">
@@ -9,7 +35,7 @@ const page = () => {
             </div>
     
             <div className="grid grid-cols-1 md:grid-cols-3 md:mb-14 px-4 gap-x-56">
-              {blogs.map((single, index) => (
+              {news?.map((single, index) => (
                 <ThreeDCardDemo single={single} key={index} />
               ))}
             </div>
