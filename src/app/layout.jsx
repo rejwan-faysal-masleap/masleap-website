@@ -1,7 +1,7 @@
 import Footer from "@/components/shared/footer";
-import { Titillium_Web } from 'next/font/google';
+import { Roboto } from 'next/font/google';
 
-const titillium_Web = Titillium_Web({
+const roboto = Roboto({
   weight: ['200', '400', '600', '700'],
   subsets: ['latin'],
 })
@@ -19,9 +19,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={titillium_Web.className}>
+    <html lang="en" className={roboto.className}>
       <body>
-
 
         <NavbarDemo />
         <DotBackgroundDemo>

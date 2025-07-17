@@ -7,9 +7,9 @@ const Testimonials = () => {
         <div className="flex-center flex-col md:flex-row w-full">
           <div className="flex-1/2 space-y-6 text-center md:text-left">
             <p className="head-title text-3xl font-[550px]">Testimonials</p>
-            <p className="text-xl md:small-paragaraph pb-16 md:pb-0">What Clients Say About Masleap.</p>
+            <p className="small-paragaraph pb-16 md:pb-0">What Clients Say About Masleap.</p>
           </div>
-          <div className="flex-1/2" data-aos="fade-left" data-aos-duration="1000">
+          <div className="flex-1/2 md:w-full w-2/3" data-aos="fade-left" data-aos-duration="1000">
             <AnimatedTestimonialsDemo/>
           </div>
         </div>

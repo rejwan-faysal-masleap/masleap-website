@@ -8,7 +8,7 @@ export function AppleCardsCarouselDemo() {
   ));
 
   return (
-    <div className="pb-20 md:pb-0 flex-center">
+    <div className="pb-10 md:pb-0 flex-center">
       <Carousel items={cards} />
     </div>
   );

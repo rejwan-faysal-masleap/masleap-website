@@ -21,7 +21,7 @@ export function ThreeDCardDemo({single}) {
         <CardItem
           as="p"
           translateZ="60"
-          className="text-gray-800 mb-10 mt-4 small-paragaraph dark:text-gray-800 line-clamp-4">
+          className="text-gray-800 mb-10 mt-4  dark:text-gray-800 line-clamp-4 text-[17px] md:text-[18px]">
          {description}
         </CardItem>
         <CardItem translateZ="100" className="w-full h-[250px] mt-4">

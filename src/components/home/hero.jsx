@@ -3,7 +3,7 @@ import InteractiveGlobe from "../3dglobe/InteractiveGlobe";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-[70vh] flex-between px-6 mb-10 md:mb-0 max-w-[1600px] mx-auto">
+    <div className="relative max-h-[80vh] md:max-h-[70vh] flex-between px-6 my-10  md:my-0 max-w-[1600px] mx-auto">
       {/* Text section */}
       <section
         className="flex flex-col z-10 space-y-7 flex-1/2"
@@ -15,10 +15,10 @@ const Hero = () => {
 </p>
 
 
-        <div className="head-title text-3xl md:text-5xl font-semibold pb-5">
+        <div className="head-title md:pb-5 text-center md:text-left">
           We Deploy <ContainerTextFlipDemo /> Agile Product Teams on Demand
         </div>
-        <p className=" text-gray-700 md:pr-4 font-[500]">
+        <p className=" text-gray-700 md:pr-4 font-[500] small-paragaraph">
           Delivering innovative software solutions, Masleap is your trusted
           offshore development partner for creativity and technical excellence.
         </p>

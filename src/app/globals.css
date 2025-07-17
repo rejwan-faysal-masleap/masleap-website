@@ -48,14 +48,14 @@ body {
 }
 
 .head-title {
-  @apply lg:text-7xl font-semibold;
+  @apply lg:text-6xl font-bold sm:text-[25px];
 }
 
 .medium-title {
   @apply md:text-2xl sm:text-[21px] font-semibold;
 }
 .small-paragaraph {
-  @apply text-[18px] md:text-[20px] tracking-wide;
+  @apply text-[17px] md:text-[20px];
 }
 
 .img {

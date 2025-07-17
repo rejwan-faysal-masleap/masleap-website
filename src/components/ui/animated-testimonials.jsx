@@ -42,7 +42,7 @@ useEffect(() => {
   return (
     <div
       className="max-w-sm antialiased md:min-w-4xl md:pl-16">
-      <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
+      <div className="relative grid grid-cols-1 md:gap-20 gap-10 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
@@ -110,7 +110,7 @@ useEffect(() => {
             <h3 className="text-2xl font-bold text-black dark:text-white">
               {testimonials[active].name}
             </h3>
-            <p className="small-paragaraph text-gray-800 dark:text-neutral-500">
+            <p className="small-paragaraph text-gray-600 dark:text-neutral-500">
               {testimonials[active].designation}
             </p>
             <motion.p className="mt-8 text-lg text-black dark:text-neutral-300">

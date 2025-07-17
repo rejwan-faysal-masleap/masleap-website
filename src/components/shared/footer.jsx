@@ -3,62 +3,76 @@ import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";
 
-
 const Footer = () => {
   return (
     <>
-    {/* <div className="my-8 h-[2px] w-full bg-gradient-to-r from-transparent via-[#1984bb] to-transparent dark:via-neutral-700" /> */}
-      <div className="min-h-60 flex-center flex-col md:flex-row max-w-[1400px] mx-auto text-xl my-0 gap-y-10 p-6">
-        <div className="flex-[40%]">
-          <section className="mb-6">
-            <Link href="/" className="flex-center space-x-3">
-              <Image
-                src="/images/logo.png"
-                alt="masleap-logo"
-                width={70}
-                height={70}
-              />
-              <p className="font-semibold text-2xl md:text-3xl">Masleap</p>
-            </Link>
-          </section>
-          <section data-aos="fade-up" data-aos-duration="500" className="uppercase space-y-1 md:text-xl text-[17px]">
-            <p >2/2 aysha mohol, shajahan road, Mohammadpur.</p>
-            <p className="mt-2">Buckeystown Pike, Frederick, MD, USA Suite 250.</p>
-            <div className="flex-center gap-x-2 mt-6">
-               < IoMailOutline className="md:text-2xl"/>
-            <p>contact@masleap.io</p>
+      {/* Optional gradient divider */}
+      <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-[#1984bb] to-transparent" />
+
+      <footer className="max-w-[1600px] mx-auto px-6 md:px-12 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 text-neutral-800">
+        {/* Left: Logo + Address + Contact */}
+        <div>
+          <Link href="/" className="flex items-center space-x-3 mb-6">
+            <Image
+              src="/images/logo.png"
+              alt="masleap-logo"
+              width={60}
+              height={60}
+              className="object-contain"
+            />
+            <span className="text-2xl md:text-3xl font-bold">Masleap</span>
+          </Link>
+
+          <div className="space-y-4 small-paragaraph leading-relaxed">
+            <p>2/2 Aysha Mohol, Shajahan Road, Mohammadpur.</p>
+            <p>Buckeystown Pike, Frederick, MD, USA Suite 250.</p>
+
+            <div className="flex items-center gap-2 pt-4">
+              <IoMailOutline className="text-xl" />
+              <a href="mailto:contact@masleap.io" className="hover:underline">
+                contact@masleap.io
+              </a>
             </div>
-            <div className="flex-center gap-x-2">
-               < FaPhone className="md:text-2xl"/>
-           <p>+1 (301) 244-0147</p>
+            <div className="flex items-center gap-2">
+              <FaPhone className="text-xl" />
+              <a href="tel:+13012440147" className="hover:underline">
+                +1 (301) 244-0147
+              </a>
             </div>
-            
-          </section>
-        </div>
-        <div className="flex-[50%] w-full flex flex-col md:flex-row items-start md:items-center justify-start md:justify-end md:gap-x-24 md:pr-20 md:border-l-4 md:border-l-gray-950 gap-y-10 mb-10 md:text-xl text-[18px]">
-       
-        <div alt="div1">
-          <p className=" text-gray-900 pb-1.5 mb-5 border-b-4 border-b-[#1984bb] font-semibold">Company</p>
-          <ul data-aos="fade-up" data-aos-duration="500" className="space-y-2 md:space-y-3">
-            <li><a href="/Career">Career</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
-          </ul>
-        </div>
-         <div alt="div2">
-          <p className=" text-gray-900 pb-1.5 mb-5 border-b-4 border-b-[#1984bb] font-semibold">Services</p>
-          <ul className="space-y-2 md:space-y-3" data-aos="fade-up" data-aos-duration="500">
-            <li><a href="/web_app_dev">Web Application Development</a></li>
-            <li><a href="/mobile_app_dev">Mobile App Development</a></li>
-            <li><a href="/custom_soft_dev">Custom Software Development</a></li>
-            <li><a href="/ui_ux_dev">Ui/Ux Design</a></li>
-          </ul>
-        </div>
+          </div>
         </div>
 
-      </div>
-        <p className="text-center font-medium text-[18px] md:text-xl mb-24">© 2025 Masleap. All rights reserved.</p>
+        {/* Right: Links */}
+        <div className="grid grid-cols-2 gap-10 md:pl-16 border-t md:border-t-0 md:border-l-2 border-gray-300 pt-10 md:pt-0 md:mt-0">
+          <div>
+            <h4 className="small-paragaraph font-semibold mb-4 border-b-2 border-[#1984bb] inline-block">
+              Company
+            </h4>
+            <ul className="space-y-3 small-paragaraph">
+              <li><Link href="/Career" className="hover:text-[#1984bb]">Career</Link></li>
+              <li><Link href="/blog" className="hover:text-[#1984bb]">Blog</Link></li>
+              <li><Link href="/contact" className="hover:text-[#1984bb]">Contact</Link></li>
+              <li><Link href="/privacy" className="hover:text-[#1984bb]">Privacy Policy</Link></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="small-paragaraph font-semibold mb-4 border-b-2 border-[#1984bb] inline-block">
+              Services
+            </h4>
+            <ul className="space-y-3 small-paragaraph">
+              <li><Link href="/web_app_dev" className="hover:text-[#1984bb]">Web App Development</Link></li>
+              <li><Link href="/mobile_app_dev" className="hover:text-[#1984bb]">Mobile App Development</Link></li>
+              <li><Link href="/custom_soft_dev" className="hover:text-[#1984bb]">Custom Software Development</Link></li>
+              <li><Link href="/ui_ux_dev" className="hover:text-[#1984bb]">UI/UX Design</Link></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <p className="text-center py-6 text-gray-500 mb-5">
+        © 2025 Masleap. All rights reserved.
+      </p>
     </>
   );
 };

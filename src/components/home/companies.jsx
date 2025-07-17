@@ -4,7 +4,7 @@ const Companies = () => {
   return (
     <>
     <BackgroundBeamsWithCollision>
-      <div className="min-h-[30vh] text-center px-4 pt-5 my-20 mb-24">
+      <div className="min-h-[30vh] text-center px-4 pt-5 md:my-20 mt-4 md:mt-0 mb-28">
         <p className="text-2xl font-semibold text-center mb-20">
           50+ companies rely on our top 1% talent to scale their dev teams.
         </p>

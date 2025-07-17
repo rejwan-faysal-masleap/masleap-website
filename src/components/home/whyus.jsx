@@ -1,6 +1,6 @@
 const Whyus = () => {
   return (
-    <div className="min-h-[80vh] max-w-[1600px] mx-auto py-20 px-6 text-center my-20 mb-12">
+    <div className="min-h-[80vh] max-w-[1600px] mx-auto md:py-20  px-6 text-center my-20 mb-12">
       <section className="flex flex-col items-center space-y-10">
         <p
           className="head-title text-3xl md:text-4xl font-semibold"
@@ -21,7 +21,7 @@ const Whyus = () => {
         </p>
       </section>
 
-      <div className="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div className="md:mt-32 mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {[
           {
             number: "01",
@@ -60,7 +60,7 @@ const Whyus = () => {
           >
             <div className="text-2xl font-bold text-blue-600">{item.number}</div>
             <h3 className="text-xl font-semibold">{item.title}</h3>
-            <p className="text-gray-600">{item.desc}</p>
+            <p className="text-gray-600 small-paragaraph">{item.desc}</p>
           </div>
         ))}
       </div>
