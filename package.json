@@ -24,6 +24,7 @@
     "motion": "^12.23.5",
     "next": "15.3.5",
     "react": "^19.0.0",
+    "react-calendly": "^4.4.0",
     "react-dom": "^19.0.0",
     "react-element-to-jsx-string": "^17.0.1",
     "react-fast-marquee": "^1.6.5",
